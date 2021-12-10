@@ -3,7 +3,7 @@ on:
   push:
     branches:
     - main
-    - master
+    - masterb
 name: Semgrep
 jobs:
   semgrep:
@@ -14,3 +14,4 @@ jobs:
     - uses: returntocorp/semgrep-action@v1
       with:
         publishToken: ${{ secrets.SEMGREP_APP_TOKEN }}
+ 
